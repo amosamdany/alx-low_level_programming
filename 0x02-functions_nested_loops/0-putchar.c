@@ -1,22 +1,19 @@
-#include <stdio.h>
-/**
- * main - prints
- * Return: 0 on success.
- */
+#include"main.h"
 
-int _putchar(char c)
-{
-return (write(1, &c, 1));
-}
+/**
+ * main - Entry point
+ *
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-char message[] = "_putchar\n";
-int i = 0;
-while (message[i] != '\0') 
-{
-_putchar(message[i]);
-i++;
-}
+char str[] = "_putchar";
+int ch;
+for (ch = 0; ch < 8; ++ch)
+_putchar(str[ch]);
+_putchar('\n');
 return (0);
 }
-
