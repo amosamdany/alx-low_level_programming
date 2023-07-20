@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
  * _isdigit - a function that print if the input is digit
  * @c: variable input
@@ -8,12 +8,12 @@
 
 int _isdigit(int c)
 {
-if (isdigit(c))
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
