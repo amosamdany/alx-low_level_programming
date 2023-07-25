@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - a function that takes a pointer to an int as parameter and
- * @str: chaine of caractere
+ * _puts - a function that takes a pointer to an int as parameters and
+ * @str: chain of characters
  *
  * Return: 1 or 0
  */
