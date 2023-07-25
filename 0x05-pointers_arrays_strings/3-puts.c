@@ -1,20 +1,14 @@
 #include "main.h"
 
 /**
- * _puts - a function that takes a pointer to an int as parameters and
- * @str: chain of characters
- *
- * Return: 1 or 0
+ * _puts - writes the string s
+ * @str: string
  */
-
 void _puts(char *str)
 {
-	int i = 0;
-
-	while (str[i])
+	while (*str != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(*str++);
 	}
 	_putchar('\n');
 }
